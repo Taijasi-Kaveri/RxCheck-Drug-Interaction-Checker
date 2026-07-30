@@ -1,0 +1,13 @@
+# API keys and secrets
+**/appsettings.json
+
+# Build outputs
+**/bin/
+**/obj/
+
+# Node modules
+**/node_modules/
+
+# Environment files
+.env
+.env.local
