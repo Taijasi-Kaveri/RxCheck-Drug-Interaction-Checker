@@ -29,7 +29,7 @@ function App() {
       const data = await response.json();
       setResult(data);
     } catch (err) {
-      setError("Failed to fetch interaction. Make sure the API is running.");
+      setError("Loading... The API may be waking up. Please try again in 30 seconds.");
     } finally {
       setLoading(false);
     }
