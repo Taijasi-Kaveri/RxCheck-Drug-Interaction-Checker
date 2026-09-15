@@ -115,7 +115,7 @@ Copy `RxCheck.API/appsettings.example.json` and rename to `appsettings.json`, th
 
 ---
 
-## Planned Features (Layer 3)
+## Planned Features (Layer 2)
 
 - **Redis caching** — cache-aside pattern with 24hr TTL to reduce Gemini API calls
 - **Rate limiting** — maximum 10 requests per minute per IP to protect the API
