@@ -18,7 +18,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch("http://localhost:5146/api/DrugInteraction/check", {
+      const response = await fetch("/api/DrugInteraction/check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ drugOne, drugTwo }),

@@ -26,7 +26,7 @@ namespace RxCheck.API.Controllers
                 return BadRequest("Both drug names are required.");
             }
 
-            var apiKey = _configuration["GeminiApiKey"];
+            var apiKey = _configuration["GeminiApiKey"] ?? Environment.GetEnvironmentVariable("GeminiApiKey");
 var url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={apiKey}";
             var prompt = $@"You are a medical information assistant. 
 A patient is asking about taking {request.DrugOne} and {request.DrugTwo} together.

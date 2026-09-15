@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: ./RxCheck.API
+      dockerfile: Dockerfile
+    ports:
+      - "5146:5146"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - GeminiApiKey=${GEMINI_API_KEY}
+    networks:
+      - rxcheck-network
+
+  client:
+    build:
+      context: ./rxcheck-client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    networks:
+      - rxcheck-network
+
+networks:
+  rxcheck-network:
+    driver: bridge
