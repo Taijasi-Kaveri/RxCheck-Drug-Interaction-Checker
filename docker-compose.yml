@@ -11,6 +11,12 @@ services:
     networks:
       - rxcheck-network
 
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - rxcheck-network
   client:
     build:
       context: ./rxcheck-client
