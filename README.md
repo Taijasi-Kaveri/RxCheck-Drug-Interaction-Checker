@@ -4,6 +4,8 @@ A full-stack AI-powered application that checks drug interactions using Google G
 
 [![.NET](https://github.com/Taijasi-Kaveri/RxCheck-Drug-Interaction-Checker/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Taijasi-Kaveri/RxCheck-Drug-Interaction-Checker/actions/workflows/dotnet.yml)
 
+[![React](https://github.com/Taijasi-Kaveri/RxCheck-Drug-Interaction-Checker/actions/workflows/react.yml/badge.svg)](https://github.com/Taijasi-Kaveri/RxCheck-Drug-Interaction-Checker/actions/workflows/react.yml)
+
 🔗 **Live Demo:** https://rxcheck-client.onrender.com
 
 > ⚠️ First load may take 30-60 seconds as the free-tier API wakes up from sleep.
